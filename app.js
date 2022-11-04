@@ -4,15 +4,11 @@ var path = require('path');
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static(path.join(__dirname + '/node_modules/bootstrap/dist')));
-// app.engine('html', require('ejs').renderFile);
-// app.set('view engine', 'html');
 app.set('view engine', 'ejs');
 app.use(express.json())
 
 
 app.get('/', function(req, res){
-    // res.sendFile(__dirname + '/index.html')
-
     res.render("home");
 })
 
