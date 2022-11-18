@@ -34,19 +34,19 @@ app.get('/404', function (req, res) {
   res.render("404");
 })
 
-// about .get
-app.get('/about', function (req, res) {
-  res.render("about/about-intro");
-})
-app.get('/in-home', function (req, res) {
-  res.render("about/in-home");
-})
-app.get('/lifetime', function (req, res) {
-  res.render("about/lifetime");
-})
-app.get('/why', function (req, res) {
-  res.render("about/why");
-})
+// // about .get
+// app.get('/about', function (req, res) {
+//   res.render("about/about-intro");
+// })
+// app.get('/in-home', function (req, res) {
+//   res.render("about/in-home");
+// })
+// app.get('/lifetime', function (req, res) {
+//   res.render("about/lifetime");
+// })
+// app.get('/why', function (req, res) {
+//   res.render("about/why");
+// })
 
 // dog-behavior .get
 app.get('/dog-behavior', function (req, res) {
@@ -121,7 +121,6 @@ app.post('/contact', (req, res) => {
     text: `FROM: ${req.body.firstName} ${req.body.lastName} \nEMAIL: ${req.body.emailAddress} \nPHONE NUMBER: ${req.body.phoneNumber} \nBEST TIMES TO CALL: ${req.body.bestTime} \nDOG NAME: ${req.body.dogName} \nDOG AGE: ${req.body.dogAge} \nDOG BREED: ${req.body.dogBreed} \n\nMESSAGE: ${req.body.message}`
   };
   
-  
   transporter.sendMail(mailOptions, function(error, info){
     if (error) {
       console.log(error);
@@ -133,7 +132,6 @@ app.post('/contact', (req, res) => {
     }
   });
 })
-
 
 let port = process.env.PORT;
 

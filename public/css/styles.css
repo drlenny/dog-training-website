@@ -38,9 +38,9 @@ body {
   
   /* navbar */
   
-  .navbar {
+  /* .navbar {
     padding: 0 0 4.5rem;
-  }
+  } */
   
   .navbar-brand {
     font-family: 'Ubuntu', sans-serif;
@@ -125,8 +125,9 @@ body {
   }
   
   .testimonial-text {
-    font-size: 3rem;
-    line-height: 1.5;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.6;
   }
   
   .testimonial-image {

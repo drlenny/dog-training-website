@@ -1,27 +1,61 @@
 <%- include('partials/header') %>
 
     <!-- Title -->
-    <div class="row">
-        <div class="col-lg-6">
-            <h1 class="big-heading">Professional training for both you and your dog to achieve a more comfortable
-                cohesive lifestyle</h1>
-            <button type="button" class="btn btn-lg btn-dark download-button"><i class="fab fa-apple"></i>
-                Download</button>
-            <button type="button" class="btn btn-lg btn-outline-light download-button"><i
-                    class="fab fa-google-play"></i> Download</button>
+    <section class="colored-section">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="big-heading">Professional training for both you and your dog to achieve a more comfortable
+                    cohesive lifestyle</h1>
+            </div>
+            <div class="col-lg-6">
+                <img class="iphone" src="images/iphone6.png" alt="iphone-mockup">
+            </div>
         </div>
-        <div class="col-lg-6">
-            <img class="iphone" src="images/iphone6.png" alt="iphone-mockup">
-        </div>
-    </div>
-    </div>
     </section>
 
+    <!-- Welcome -->
+    <section class="white-section" id="welcome">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 welcomeIntro">
+                    <h4 class="text-uppercase green">Professional Dog Trainer and Animal Behaviorist</h4>
+                    <h1 class="text-uppercase">Daniel Lenihan</h1>
+                    <p>Dogs have always been an important part of my life for as long as I can remember. Having studied
+                        animal behavior and being mentored by some of the best dog trainers in the country, I have
+                        developed the skills to assist familes with their own beloved canine companions. Nothing brings
+                        me greater joy than working with dogs and their owners to achieve a more comfortable and
+                        cohesive lifestyle.</p>
+                    <p>Communication is vital to any relationship, and that includes the one between you and your dog.
+                        My goal is to not just help train dogs to be make better decisions, but to educate their
+                        families on how to more effectively make their intentions clear.</p>
+                    <p>I look forward to helping you make these goals a reality, contact me today to learn more and
+                        arrange a free consultation!</p>
+
+                    <div class="contactButtons">
+                        <a href="/contact" class="btn btn-primary">
+                            <i class="bi bi-forward"></i>
+                            <span>Contact</span>
+                        </a>
+                        <a href="mailto:lenihand22@gmail.com" class="btn btn-primary">
+                            <i class="bi bi-envelope-fill"></i>
+                            <span>Send me an email</span>
+                        </a>
+                        <a href="tel:832-723-4497" class="btn btn-primary">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>(832) 723-4497</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-lg-5 welcome picture">
+                    <img class="profilePicture" src="" alt="profilePicture">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Features -->
-
     <section class="white-section" id="features">
-        <div class="container-fluid">
+        <div class="container">
 
             <div class="row">
 
@@ -56,37 +90,53 @@
     <!-- Testimonials -->
 
     <section class="colored-section" id="testimonials">
+        <div class="container">
+            <div class="row">
 
-        <div id="testimonial-carousel" class="carousel slide" data-ride="false">
-            <div class="carousel-inner">
-                <div class="carousel-item active container-fluid">
-                    <h2 class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                        obcaecati, aut sint ipsum odit harum, dolorem voluptates iste laudantium voluptatibus fugit
-                        reiciendis illum quibusdam eaque quas officiis quod corrupti porro.</h2>
-                    <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
-                    <em>lorem ipsum</em>
+                <div class="col-lg-8">
+                    <h2>Education for Dog and Family</h2>
+                    <p>There is no such thing as truly "bad dog." Behavioral issues are most often the result of experiences leading dogs to believe that they should act out in a certain way, even if said behavior is considered innapropriate by their owners. This is why it is important to consider your dog's specific situation and make your expectations for them as clear as possible. My job is provide an individualized training plan to show you how your dog naturally thinks, learns, and reacts and then using this knowledge to lead and communicate with them. Once that is established, behavioral change will naturally follow after. I have worked with all kinds of breeds, ages, and issues and have helped all of them achieve happier lives with their dogs.</p>
                 </div>
-                <div class="carousel-item container-fluid">
-                    <h2 class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, in ea?
-                        Deleniti, perspiciatis. Asperiores accusantium eum, libero dicta fugit voluptas inventore!
-                        Consequatur harum quisquam deserunt earum molestiae similique. Veniam, molestias?</h2>
-                    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-                    <em>lorem ipsum</em>
+
+                <div class="col-lg-4">
+                    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active container-fluid">
+                                <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam
+                                    obcaecati, aut sint ipsum odit harum, dolorem voluptates iste laudantium
+                                    voluptatibus
+                                    fugit
+                                    reiciendis illum quibusdam eaque quas officiis quod corrupti porro.</p>
+                                <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+                                <em>lorem ipsum</em>
+                            </div>
+                            <div class="carousel-item container-fluid">
+                                <h2 class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Hic,
+                                    in
+                                    ea?
+                                    Deleniti, perspiciatis. Asperiores accusantium eum, libero dicta fugit voluptas
+                                    inventore!
+                                    Consequatur harum quisquam deserunt earum molestiae similique. Veniam, molestias?
+                                </h2>
+                                <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+                                <em>lorem ipsum</em>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
-
-
     </section>
-
 
     <!-- Press -->
 
