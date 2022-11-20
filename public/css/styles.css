@@ -146,18 +146,18 @@ body {
     margin: 20px 20px 50px;
   }
   
-  /* pricing */
+  /* services-home */
   
-  #pricing {
-    padding: 100px;
+  #services {
+    padding: 50px;
   }
   
-  .price-text {
+  .service-text {
     font-size: 3rem;
     line-height: 1.5;
   }
   
-  .pricing-card {
+  .service-card {
     padding: 3% 2%;
   }
   

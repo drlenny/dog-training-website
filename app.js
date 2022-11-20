@@ -78,9 +78,6 @@ app.get('/rescue', function (req, res) {
 app.get('/services', function (req, res) {
   res.render("services/service-intro");
 })
-app.get('/services', function (req, res) {
-  res.render("services/service-intro");
-})
 app.get('/behavior-therapy', function (req, res) {
   res.render("services/behavior-therapy");
 })
