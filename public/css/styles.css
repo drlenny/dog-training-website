@@ -26,6 +26,10 @@ body {
   }
   
   /* sections */
+
+  .element-1 {
+    padding-top: 90px;
+  }
   
   .colored-section {
     background-color: #168a3c;
@@ -38,9 +42,13 @@ body {
   
   /* navbar */
   
-  /* .navbar {
-    padding: 0 0 4.5rem;
-  } */
+  .navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1100;
+    border-bottom: 1px solid #8f8f8f;
+  }
   
   .navbar-brand {
     font-family: 'Ubuntu', sans-serif;
