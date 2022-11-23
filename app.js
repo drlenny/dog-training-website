@@ -48,31 +48,31 @@ app.get('/404', function (req, res) {
 //   res.render("about/why");
 // })
 
-// dog-behavior .get
-app.get('/dog-behavior', function (req, res) {
-  res.render("dog-behavior/behavior-intro");
-})
-app.get('/aggression', function (req, res) {
-  res.render("dog-behavior/aggression");
-})
-app.get('/anxiety', function (req, res) {
-  res.render("dog-behavior/anxiety");
-})
-app.get('/barking', function (req, res) {
-  res.render("dog-behavior/barking");
-})
-app.get('/destructive', function (req, res) {
-  res.render("dog-behavior/destructive");
-})
-app.get('/ocd', function (req, res) {
-  res.render("dog-behavior/ocd");
-})
-app.get('/potty', function (req, res) {
-  res.render("dog-behavior/potty");
-})
-app.get('/rescue', function (req, res) {
-  res.render("dog-behavior/rescue");
-})
+// // dog-behavior .get
+// app.get('/dog-behavior', function (req, res) {
+//   res.render("dog-behavior/behavior-intro");
+// })
+// app.get('/aggression', function (req, res) {
+//   res.render("dog-behavior/aggression");
+// })
+// app.get('/anxiety', function (req, res) {
+//   res.render("dog-behavior/anxiety");
+// })
+// app.get('/barking', function (req, res) {
+//   res.render("dog-behavior/barking");
+// })
+// app.get('/destructive', function (req, res) {
+//   res.render("dog-behavior/destructive");
+// })
+// app.get('/ocd', function (req, res) {
+//   res.render("dog-behavior/ocd");
+// })
+// app.get('/potty', function (req, res) {
+//   res.render("dog-behavior/potty");
+// })
+// app.get('/rescue', function (req, res) {
+//   res.render("dog-behavior/rescue");
+// })
 
 // services .get
 app.get('/services', function (req, res) {
