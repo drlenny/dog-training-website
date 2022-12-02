@@ -1,90 +1,92 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-  }
-  
-  .big-heading {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    line-height: 1.5;
-    font-weight: 900;
-  }
-  
-  .section-heading {
-    font-size: 3rem;
-    line-height: 1.5;
-  }
-  
-  /* containers */
-  .container-fluid {
-    padding: 5% 15%;
-  }
-  
-  /* sections */
+  font-family: 'Montserrat', sans-serif;
+}
 
-  .element-1 {
-    padding-top: 90px;
-  }
-  
-  .colored-section {
-    background-color: #168a3c;
-    color: #fff;
-  }
-  
-  .white-section {
-    background-color: rgb(209, 251, 246);
-  }
-  
-  /* navbar */
-  
-  .navbar {
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 1100;
-    border-bottom: 1px solid #8f8f8f;
-  }
-  
-  .navbar-brand {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 500;
-  }
-  
-  .nav-item {
-    padding: 0 18px;
-  }
-  
-  .nav-link {
-    font-size: 1.2rem;
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
 
-  .dropdown-menu {
-    background-color: #168a3c;
-    min-width: 300px;
-  }
-  
-  /* title */
-  
-  #title .container-fluid {
+.big-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+/* .section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+} */
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  border-radius: 60px;
+  text-transform: uppercase;
+  font-size: large;
+}
+
+/* containers */
+.container-fluid {
+  padding: 5% 15%;
+}
+
+/* sections */
+
+.element-1 {
+  padding-top: 90px;
+}
+
+.colored-section {
+  background-color: #168a3c;
+  color: #fff;
+}
+
+.white-section {
+  background-color: rgb(209, 251, 246);
+}
+
+/* navbar */
+
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+  border-bottom: 1px solid #8f8f8f;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.dropdown-menu {
+  background-color: #168a3c;
+  min-width: 300px;
+}
+
+/* title */
+
+/* #title .container-fluid {
     padding: 3% 15% 7%;
     text-align: left;
-  }
-  
-   /* button */
-  
-  .download-button {
-    margin: 5% 5% 0;
-  
-  }
-  
-  
-  /* title image */
-  .iphone {
+  } */
+
+/* title image */
+/* .iphone {
     width: 60%;
     transform: rotate(25deg);
     position: absolute;
@@ -101,11 +103,11 @@ body {
       position: static;
       transform: rotate(0);
     }
-  }
-  
-  /* features */
-  
-  #features {
+  } */
+
+/* features */
+
+/* #features {
     position: relative;
   }
   
@@ -129,42 +131,98 @@ body {
   
   .features-subtitle {
     color: #8f8f8f;
+  } */
+
+/* Welcome */
+
+#welcome h4 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+#welcome p {
+  padding: 12px 0;
+}
+
+.contactButtons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contactButtons .btn {
+  margin: 0 20px;
+  margin-bottom: 15px;
+}
+
+.profilePicture{
+  width: 100%;
+  margin: 15px;
+}
+
+/* testimonials */
+#testimonials {
+  background-color: #168a3c;
+}
+
+#testimonials .carousel {
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.testimonial-image {
+  width: 15%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  background-color: #168a3c;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* services-home */
+
+#services {
+  padding: 50px;
+  text-align: center;
+}
+
+.home-service-button {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .row {
+    display: flex;
+    align-items: stretch;
   }
-  
-  /* testimonials */
-  #testimonials {
-    background-color: #168a3c;
+
+  .row>.col-md-4 {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
   }
-  
-  .testimonial-text {
-    font-size: 16px;
-    font-style: italic;
-    line-height: 1.6;
+
+  .row>.col-md-4>a {
+    margin-top: auto;
   }
-  
-  .testimonial-image {
-    width: 15%;
-    border-radius: 100%;
-    margin: 20px;
+
+  .row:before {
+    content: none;
   }
-  
-  #press {
-    background-color: #168a3c;
-    padding-bottom: 3%;
-  }
-  
-  .press-logo {
-    width: 15%;
-    margin: 20px 20px 50px;
-  }
-  
-  /* services-home */
-  
-  #services {
-    padding: 50px;
-  }
-  
-  .service-text {
+}
+
+/* .service-text {
     font-size: 3rem;
     line-height: 1.5;
   }
@@ -172,10 +230,9 @@ body {
   .service-card {
     padding: 3% 2%;
   }
-  
-  /* footer */
-  
-  .footer-icon {
-    margin: 20px 10px;
-  }
-  
+   */
+/* footer */
+
+.footer-icon {
+  margin: 20px 10px;
+}
