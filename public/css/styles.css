@@ -27,6 +27,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 60px;
   text-transform: uppercase;
   font-size: large;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 /* containers */
@@ -41,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .colored-section {
-  background-color: #168a3c;
+  background-color: #0762AB;
   color: #fff;
 }
 
@@ -56,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   z-index: 1100;
-  border-bottom: 1px solid #8f8f8f;
+  box-shadow:0 0 10px rgb(0, 0, 0);
 }
 
 .navbar-brand {
@@ -74,8 +76,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dropdown-menu {
-  background-color: #168a3c;
+  background-color: #0762AB;
   min-width: 300px;
+  border: none;
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  .nav-link{
+    line-height: 1;
+  }
 }
 
 /* title */
@@ -161,7 +171,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* testimonials */
 #testimonials {
-  background-color: #168a3c;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 #testimonials .carousel {
@@ -180,15 +191,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px;
 }
 
-#press {
-  background-color: #168a3c;
-  padding-bottom: 3%;
-}
-
-.press-logo {
-  width: 15%;
-  margin: 20px 20px 50px;
-}
 
 /* services-home */
 
@@ -220,6 +222,21 @@ h1, h2, h3, h4, h5, h6 {
   .row:before {
     content: none;
   }
+}
+
+/* call to action */
+#cta{
+  text-align: center;
+}
+
+#cta a{
+  color: rgb(28, 48, 151);
+  transition: color .25s;
+}
+
+#cta a:hover {
+  text-decoration: none;
+  color:#ffffff;
 }
 
 /* .service-text {
