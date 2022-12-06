@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .white-section {
-  background-color: rgb(209, 251, 246);
+  background-color: rgb(243, 243, 243);
 }
 
 /* navbar */
@@ -60,6 +60,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 2.5rem;
   font-weight: 500;
+  margin: 0;
+}
+
+.navbar-toggler{
+  padding: 0.25rem 0.5rem;
 }
 
 .nav-item {
@@ -68,6 +73,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-link {
   font-size: 1.2rem;
+}
+
+.nav-link:hover{
+  color: #fff !important;
 }
 
 .dropdown-menu {
@@ -143,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .row {
     display: flex;
     align-items: stretch;
@@ -181,7 +190,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* services pages */
 .service-page{
-  margin-top: 30px;
+  padding-top: 30px;
+}
+
+.service-title {
+  border-bottom: 1.5px solid rgb(13, 0, 255);
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+  font-variant: small-caps;
 }
 
 .services-subnav{
@@ -195,13 +211,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .services-subnav a{
   color: black;
-  padding: 12px 25px;
+  padding: 12px 20px;
   display: block;
+  letter-spacing: 1px;
 }
 
 .services-subnav a:hover {
   text-decoration: none;
-  color: red;
+  font-weight: bold;
 }
 
 .services-subnav li{
@@ -211,19 +228,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .services-subnav li[aria-current]:not([aria-current="false"]) {
   font-weight: bold;
-  border: 1px solid black;
+  border: 1px solid rgba(134, 134, 134, 0.515);
+  background-color: #f8f9fa;
 }
 
 .services-subnav li:hover{
-  border: 1px solid black;
+  border: 1px solid rgba(134, 134, 134, 0.515);
 }
 
 .services-subnav li:active{
   background: white;
-  border: 1px solid black;
+  border: 1px solid rgba(134, 134, 134, 0.515);
 }
 
 /* footer */
+
+#footer{
+  text-align: center;
+}
 
 .footer-icon {
   margin: 20px 10px;
