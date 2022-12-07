@@ -30,10 +30,6 @@ app.get('/reviews', function (req, res) {
   res.render("reviews");
 })
 
-app.get('/404', function (req, res) {
-  res.render("404");
-})
-
 // // about .get
 // app.get('/about', function (req, res) {
 //   res.render("about/about-intro");
@@ -98,11 +94,9 @@ app.get('/what-to-expect', function (req, res) {
 })
 
 // email form submission
-
 app.post('/contact', (req, res) => {
 
   console.log(req);
-
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -128,6 +122,11 @@ app.post('/contact', (req, res) => {
       res.redirect("/")
     }
   });
+})
+
+// 404 handling
+app.all('*', function (req, res) {
+  res.render("404");
 })
 
 let port = process.env.PORT;

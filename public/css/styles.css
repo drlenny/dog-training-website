@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* containers */
 .container-fluid {
-  padding: 4% 15%;
+  padding: 3% 15%;
 }
 
 /* sections */
@@ -39,16 +39,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .colored-section {
   color: #fff;
-  background-color: #0762AB;
+  background-color: #023660;
 }
 
 .white-section {
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(234, 234, 234);
   padding-bottom: 25px;
 }
 
 /* navbar */
-
 .navbar {
   position: fixed;
   left: 0;
@@ -81,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dropdown-menu {
-  background-color: #0762AB;
+  background-color: #023660;
   min-width: 300px;
   border: none;
   padding: 0;
