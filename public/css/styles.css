@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* containers */
 .container-fluid {
-  padding: 5% 15%;
+  padding: 4% 15%;
 }
 
 /* sections */
@@ -38,12 +38,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .colored-section {
-  background-color: #0762AB;
   color: #fff;
+  background-color: #0762AB;
 }
 
 .white-section {
   background-color: rgb(243, 243, 243);
+  padding-bottom: 25px;
 }
 
 /* navbar */
@@ -53,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   z-index: 1100;
-  box-shadow:0 0 10px rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 .navbar-brand {
@@ -63,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   padding: 0.25rem 0.5rem;
 }
 
@@ -75,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2rem;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: #fff !important;
 }
 
@@ -87,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 992px) {
-  .nav-link{
+  .nav-link {
     line-height: 1;
   }
 }
@@ -113,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 15px;
 }
 
-.profilePicture{
+.profilePicture {
   width: 100%;
   margin: 15px;
 }
@@ -122,6 +123,10 @@ h1, h2, h3, h4, h5, h6 {
 #testimonials {
   padding-top: 50px;
   padding-bottom: 20px;
+  background-image: url(../images/2_generated.jpg);
+  background-size: 100%;
+  background-blend-mode: screen;
+  background-repeat: repeat;
 }
 
 #testimonials .carousel {
@@ -174,22 +179,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* call to action */
-#cta{
+#cta {
   text-align: center;
 }
 
-#cta a{
-  color: rgb(28, 48, 151);
-  transition: color .25s;
+#cta a {
+  color: #8dd2ff;
+  transition: color .15s;
 }
 
 #cta a:hover {
   text-decoration: none;
-  color:#ffffff;
+  color: #ffffff;
 }
 
 /* services pages */
-.service-page{
+.service-page {
   padding-top: 30px;
 }
 
@@ -200,16 +205,16 @@ h1, h2, h3, h4, h5, h6 {
   font-variant: small-caps;
 }
 
-.services-subnav{
+.services-subnav {
   padding: 0;
 }
 
-.services-subnav li a i{
+.services-subnav li a i {
   color: black !important;
   padding-right: 15px;
 }
 
-.services-subnav a{
+.services-subnav a {
   color: black;
   padding: 12px 20px;
   display: block;
@@ -221,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-.services-subnav li{
+.services-subnav li {
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0);
 }
@@ -232,18 +237,18 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f8f9fa;
 }
 
-.services-subnav li:hover{
+.services-subnav li:hover {
   border: 1px solid rgba(134, 134, 134, 0.515);
 }
 
-.services-subnav li:active{
+.services-subnav li:active {
   background: white;
   border: 1px solid rgba(134, 134, 134, 0.515);
 }
 
 /* footer */
 
-#footer{
+#footer {
   text-align: center;
 }
 
