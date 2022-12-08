@@ -15,81 +15,45 @@ app.use(bodyParser.urlencoded({
 
 
 app.get('/', function(req, res){
+    res.locals.title = "Daniel Lenihan: Dog Trainer";
     res.render("home");
 })
 
 app.get('/contact', function (req, res) {
+  res.locals.title = "Contact";
   res.render("contact");
 })
 
 app.get('/local-links', function (req, res) {
+  res.locals.title = "Local Links";
   res.render("local-links");
 })
 
 app.get('/reviews', function (req, res) {
+  res.locals.title = "Reviews";
   res.render("reviews");
 })
 
-// // about .get
-// app.get('/about', function (req, res) {
-//   res.render("about/about-intro");
-// })
-// app.get('/in-home', function (req, res) {
-//   res.render("about/in-home");
-// })
-// app.get('/lifetime', function (req, res) {
-//   res.render("about/lifetime");
-// })
-// app.get('/why', function (req, res) {
-//   res.render("about/why");
-// })
-
-// // dog-behavior .get
-// app.get('/dog-behavior', function (req, res) {
-//   res.render("dog-behavior/behavior-intro");
-// })
-// app.get('/aggression', function (req, res) {
-//   res.render("dog-behavior/aggression");
-// })
-// app.get('/anxiety', function (req, res) {
-//   res.render("dog-behavior/anxiety");
-// })
-// app.get('/barking', function (req, res) {
-//   res.render("dog-behavior/barking");
-// })
-// app.get('/destructive', function (req, res) {
-//   res.render("dog-behavior/destructive");
-// })
-// app.get('/ocd', function (req, res) {
-//   res.render("dog-behavior/ocd");
-// })
-// app.get('/potty', function (req, res) {
-//   res.render("dog-behavior/potty");
-// })
-// app.get('/rescue', function (req, res) {
-//   res.render("dog-behavior/rescue");
-// })
-
 // services .get
 app.get('/services', function (req, res) {
+  res.locals.title = "Training Services";
   res.render("services/service-intro");
 })
 app.get('/behavior-therapy', function (req, res) {
+  res.locals.title = "Behavior Therapy";
   res.render("services/behavior-therapy");
 })
-app.get('/gold-service', function (req, res) {
-  res.render("services/gold-service");
-})
-app.get('/governing-principle', function (req, res) {
-  res.render("services/governing-principle");
-})
+
 app.get('/obedience-training', function (req, res) {
+  res.locals.title = "Obedience Training";
   res.render("services/obedience-training");
 })
 app.get('/puppy-training', function (req, res) {
+  res.locals.title = "Puppy Training";
   res.render("services/puppy-training");
 })
 app.get('/what-to-expect', function (req, res) {
+  res.locals.title = "What To Expect";
   res.render("services/what-to-expect");
 })
 
@@ -126,6 +90,7 @@ app.post('/contact', (req, res) => {
 
 // 404 handling
 app.all('*', function (req, res) {
+  res.locals.title = "Page Not Found";
   res.render("404");
 })
 

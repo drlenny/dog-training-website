@@ -245,7 +245,22 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(134, 134, 134, 0.515);
 }
 
+/* contact page */
+#contact h2{
+  padding: 25px 0;
+}
+
+#contact button {
+  margin-left: 25px;
+}
+
 /* footer */
+.footer-bg{
+  background-image: url(../images/2_generated.jpg);
+  background-size: 100%;
+  background-blend-mode: screen;
+  background-repeat: repeat;
+}
 
 #footer {
   text-align: center;

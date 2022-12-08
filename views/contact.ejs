@@ -1,41 +1,37 @@
 <%- include('partials/header') %>
-
-    <div class="container element-1">
+<section class="white-section element-1">
+    <div class="container" id="contact">
         <div class="row">
             <div class="col">
-                <h3>Contact Me</h3>
+                <h2>Contact Me</h2>
                 <form action="/contact" method="POST">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="emailAddress">Your email address</label>
-                                <span class="requiredField">*</span>
-                                <input class="form-control" placeholder="Your email address" name="emailAddress" type="email" id="emailAddress">
+                                <input class="form-control" placeholder="Your email address" name="emailAddress" type="email" id="emailAddress" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="emailAddress-confirm">Re-enter your email address</label>
-                                <span class="requiredField">*</span>
+                                <label for="emailAddress-confirm">Re-enter your email address</label>                               
                                 <input class="form-control" placeholder="Re-enter your email address"
-                                    name="emailAddress-confirm" type="email" id="emailAddress-confirm">
+                                    name="emailAddress-confirm" type="email" id="emailAddress-confirm" required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="firstName">Your first name</label>
-                                <span class="requiredField">*</span>
-                                <input class="form-control" placeholder="Your first name" name="firstName" type="text" id="firstName">
+                                <label for="firstName">Your first name</label>                               
+                                <input class="form-control" placeholder="Your first name" name="firstName" type="text" id="firstName" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="lastName">Your last name</label>
-                                <span class="requiredField">*</span>
+                                <label for="lastName">Your last name</label>                              
                                 <input class="form-control" placeholder="Your last name"
-                                    name="lastName" type="text" id="lastName">
+                                    name="lastName" type="text" id="lastName" required>
                             </div>
                         </div>
                     </div>
@@ -43,8 +39,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="phoneNumber">Your preferred phone number</label>
-                                <span class="requiredField">*</span>
-                                <input class="form-control" placeholder="Your preferred phone number" name="phoneNumber" type="text" id="phoneNumber">
+                                <input class="form-control" placeholder="Your preferred phone number" name="phoneNumber" type="tel" id="phoneNumber" pattern="[0-9]{3}[-. ][0-9]{3}[-. ][0-9]{4}|[0-9]{10}" required>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -59,16 +54,14 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="dogName">Your dog's name</label>
-                                <span class="requiredField">*</span>
-                                <input class="form-control" placeholder="Your dog's name" name="dogName" type="text" id="dogName">
+                                <input class="form-control" placeholder="Your dog's name" name="dogName" type="text" id="dogName" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="dogAge">Your dog's age</label>
-                                <span class="requiredField">*</span>
                                 <input class="form-control" placeholder="Your dog's age"
-                                    name="dogAge" type="text" id="dogAge">
+                                    name="dogAge" type="text" id="dogAge" required>
                             </div>
                         </div>
                     </div>
@@ -76,15 +69,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="dogBreed">Your dog's breed</label>
-                                <span class="requiredField">*</span>
-                                <input class="form-control" placeholder="Your dog's breed" name="dogBreed" type="text" id="dogBreed">
+                                <input class="form-control" placeholder="Your dog's breed" name="dogBreed" type="text" id="dogBreed" required>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="message">How can I help?</label>
-                        <span class="requiredField">*</span>
-                        <textarea class="form-control" name="message" id="message" cols="30" rows="8" placeholder="Message"></textarea>
+                        <label for="message">Training concerns</label>
+                        <textarea class="form-control" name="message" id="message" cols="30" rows="8" placeholder="Message" required></textarea>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
@@ -99,5 +90,5 @@
 
     </div>
 
-
+</section>
     <%- include('partials/footer') %>
