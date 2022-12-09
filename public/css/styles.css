@@ -193,6 +193,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* services pages */
+.my-selfie{
+  text-align: center;
+}
+
+.service-page .profilePicture{
+  border-radius: 25%;
+  width: 75%;
+  background: #023660;
+  padding: 10px;
+}
+
 .service-page {
   padding-top: 30px;
 }
