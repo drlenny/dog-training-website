@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
 /* testimonials */
 #testimonials {
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   background-image: url(../images/2_generated.jpg);
   background-size: 100%;
   background-blend-mode: screen;
@@ -150,6 +150,13 @@ h1, h2, h3, h4, h5, h6 {
 #services {
   padding: 50px;
   text-align: center;
+}
+
+#services img{
+  margin-top: -100px;
+  filter: drop-shadow(2px 1px 6px rgba(0, 0, 0, 0.622));
+  width: 100%;
+  height: auto;
 }
 
 .home-service-button {
